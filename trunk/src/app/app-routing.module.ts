@@ -19,8 +19,12 @@ const routes: Routes = [
     component: null //uploadMyMusic
   },
   {
-    path: '',
-    redirectTo: 'reLogin',
+    path:"home/playAndShare/:id",
+    component:null
+  },
+  {
+    path: '',//表示默认路径
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
